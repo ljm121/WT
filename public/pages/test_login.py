@@ -34,6 +34,7 @@ class Test_Login(BEM):
     def test_001_login(self):
         driver = BEM.get_driver()
         driver.get(url_value)
+
         elemt = BEM.find_element(PE.user_elemt)
         BEM.send_keys(elemt, user_value)
 
@@ -42,14 +43,11 @@ class Test_Login(BEM):
 
         elemt = BEM.find_element(PE.click_login)
         BEM.get_click(elemt)
-        time.sleep(2)
         # driver.quit()
-
-        print(BEM.get_title())
-        self.assertEqual(BEM.get_title(), '工作台', msg='断言成功，内容相等')
-        BEM.sleep(2)
-        return BEM.get_title()
-
+        # print(BEM.get_title())
+        # self.assertEqual(BEM.get_title(), '工作台', msg='断言成功，内容相等')
+        # BEM.sleep(2)
+        # return BEM.get_title()
 
 # if __name__ == '__main__':
 #     unittest.main(verbosity=2)

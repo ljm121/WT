@@ -27,7 +27,7 @@ class Base_Element_Method(unittest.TestCase):
         global elem
         elemt_type = element[0]
         elemt_value = element[1]
-        elemt_type = elemt_type.lower()
+        # elemt_type = elemt_type.lower()
         try:
             if elemt_type == 'id':
                 elem = cls.driver.find_element_by_id(elemt_value)
@@ -60,6 +60,7 @@ class Base_Element_Method(unittest.TestCase):
 
     @classmethod
     def sleep(cls, sec):
+        """延时等待"""
         time.sleep(sec)
 
     @classmethod
@@ -69,6 +70,7 @@ class Base_Element_Method(unittest.TestCase):
 
     @classmethod
     def get_title(cls):
+        """浏览器标题"""
         return cls.driver.title
 
 

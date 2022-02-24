@@ -20,3 +20,6 @@ class Page_Element():
 
     # 注册
     zhuce = ('xpath', '//*[@id="AccountLogin"]/div[5]/div/div/div/div/a/button/span')
+
+    # 新增员工
+    add_user = ('xpath', '/html/body/div/section/main/div/div[2]/div[2]/div[2]/div[2]/div/svg/use')

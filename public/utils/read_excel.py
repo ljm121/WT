@@ -22,4 +22,4 @@ class Read_Excel():
 
 if __name__ == '__main__':
     read_excel = Read_Excel('Data.xlsx', 0)
-    print(read_excel.read_value(1, 0))
+    print(int(read_excel.read_value(1, 1)))
