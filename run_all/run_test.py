@@ -4,11 +4,12 @@
 # @Email   : lijm@woketech.com
 # @File    : run_test.py
 # @Software: PyCharm
-import unittest
 import time
-from public.utils.HTMLTestRunner import HTMLTestRunner
+import unittest
+
 # 把报告路径和项目路径导入（项目路径需要作为批量执行用例的路径）
-from config.config_path import report_path, pages_path, project_path
+from config.config_path import report_path, project_path
+from public.utils.HTMLTestRunner import HTMLTestRunner
 from public.utils.mail_new import Maile_test
 
 

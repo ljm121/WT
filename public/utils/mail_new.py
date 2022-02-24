@@ -53,7 +53,7 @@ class Maile_test():
         smtp.quit()
 
 
-# if __name__ == '__main__':
-#     mail_address = r'C:\pycharm\WT\report\2022_02_08_11_25_18_ui_report.html'
-#     mail_test = Maile_test(mail_address)
-#     mail_test.send_mail()
+if __name__ == '__main__':
+    mail_address = r'C:\pycharm\WT\report\2022_02_24_14_44_46_ui_report.html'
+    mail_test = Maile_test(mail_address)
+    mail_test.send_mail()
